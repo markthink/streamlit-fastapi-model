@@ -1,0 +1,6 @@
+fastapi
+pillow
+torch
+torchvision
+python-multipart
+aiofiles

@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  fastapi:
+    build: fastapi/
+    ports: 
+      - 8000:8000
+  streamlit:
+    build: streamlit/
+    depends_on:
+      - fastapi
+    ports: 
+        - 8501:8501
